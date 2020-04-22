@@ -71,7 +71,7 @@ function calculator(text) {
                 enterSecondTime = true;
                 break;
             case "+":
-                drawText(firstDigits + secondDigits);
+                drawText(Number(firstDigits) + Number(secondDigits));
                 enterSecondTime = true;
                 break;
             case "-":
