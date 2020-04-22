@@ -42,16 +42,16 @@ function calculator(text) {
     } 
      
     switch (text) {
-        case "NumpadDivide":
+        case "KeyD":
             operator = "/";
             break;
-        case "NumpadMultiply":
+        case "KeyM":
             operator = "*";
             break;
-        case "NumpadAdd":
+        case "KeyA":
             operator = "+";
             break;
-        case "NumpadSubtract":
+        case "KeyS":
             operator = "-";
             break;
     }
