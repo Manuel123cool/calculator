@@ -32,11 +32,13 @@ function calculator(text) {
     console.log(text);
     if (text.substring(0, 5) == "Digit" && operator != "") {
         firstDigits += text.charAt(5); 
+        drawText(firstDigits);
         return;
     }
             
     if (text.substring(0, 5) == "Digit") {
         secondDigits += text.charAt(5);
+        drawText(secondDigits);
     } 
      
     switch (text) {
