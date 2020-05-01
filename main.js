@@ -3,20 +3,6 @@
 let c = document.getElementById("calculator");
 let ctx = c.getContext("2d");
 
-function drawRectBorder(xPos, yPos, width, height) {
-    ctx.moveTo(xPos, yPos);
-    ctx.lineTo(xPos + width, yPos);
-    
-    ctx.moveTo(xPos, yPos);
-    ctx.lineTo(xPos, yPos + height);
-
-    ctx.moveTo(xPos, yPos + height);
-    ctx.lineTo(xPos + width, yPos + height);
-
-    ctx.moveTo(xPos + width, yPos);
-    ctx.lineTo(xPos + width, yPos + height);
-}
-
 function drawText(text) {
     ctx.clearRect(6, 6, 389, 59);
     ctx.font = "30px Arial";
@@ -92,7 +78,7 @@ function keyPressEvent(e) {
     calcText(e.code, false);
 }
 
-drawRectBorder(5, 5, 390, 60);
+ctx.strokeRect(5, 5, 390, 60);
 
 window.addEventListener("keypress", keyPressEvent);
 
