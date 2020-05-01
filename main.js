@@ -55,7 +55,7 @@ function calculator(text) {
                 enterSecondTime = true;
                 break;
             case "/":
-                drawText(firstDigits / secondDigits);
+                drawText(secondDigits / firstDigits);
                 enterSecondTime = true;
                 break;
             case "+":
@@ -80,4 +80,4 @@ function keyPressEvent(e) {
 
 ctx.strokeRect(5, 5, 390, 60);
 
-window.addEventListener("keypress", keyPressEvent)
+window.addEventListener("keypress", keyPressEvent);
