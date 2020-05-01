@@ -80,6 +80,4 @@ function keyPressEvent(e) {
 
 ctx.strokeRect(5, 5, 390, 60);
 
-window.addEventListener("keypress", keyPressEvent);
-
-ctx.stroke();
+window.addEventListener("keypress", keyPressEvent)
